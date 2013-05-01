@@ -36,7 +36,6 @@ h1 {
 }
 
 h2, .beta {
-    text-align: center;
     margin: 0;
     padding: 40px 0 15px 0;
     line-height: 1;
@@ -158,6 +157,7 @@ form {
 
 .dgrey {
     background: @dgrey;
+    color: @lgrey;
 }
 
 .mgrey {
@@ -171,6 +171,104 @@ form {
 
 /* SECTIONS */
 
+.feature {
+    width: 380px;
+    text-align: left;
+    h2 {
+        position: relative;
+        &:before {
+            content: '';
+            width: 57px;
+            height: 57px;
+            left: -70px;
+            top: 5px;
+            position: absolute;
+        }
+    }
+    ul {
+        padding-left: 0;
+    }
+}
+
+.feature-left {
+    float: left;
+    padding-left: 70px;
+}
+
+.feature-right {
+    float: right;
+}
+
+.triple-feature {
+    height: 585px;
+    background: url(../images/sprites/bg_triple.png) center bottom no-repeat;
+    overflow: hidden;
+    .feature-item {
+        float: left;
+        width: 300px;
+        margin: 10px 20px 0 0;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+    }
+}
+
+.schedule {
+    padding-top: 60px;
+    .block-inner {
+        height: 560px;
+        background: url(../images/sprites/bg_schedule.png) left top no-repeat;
+    }
+    .feature {
+        margin-top: 130px;
+    }
+    h2:before {
+        background: url(../images/sprites/icon_schedule.png) left top no-repeat;
+    }
+}
+
+.recommendations {
+    padding-top: 60px;
+    .block-inner {
+        height: 695px;
+        background: url(../images/sprites/bg_recommendations.png) right top no-repeat;
+    }
+    .feature {
+        margin-top: 130px;
+    }
+    h2:before {
+        background: url(../images/sprites/icon_recommendations.png) left top no-repeat;
+    }
+}
+
+.tickets {
+    .block-inner {
+        height: 598px;
+        background: url(../images/sprites/bg_tickets.png) left top no-repeat;
+    }
+    .feature {
+        margin-top: 130px;
+    }
+    h2:before {
+        background: url(../images/sprites/icon_tickets.png) left top no-repeat;
+    }
+}
+.festivals {
+    .block-inner {
+        height: 597px;
+        background: url(../images/sprites/bg_festivals.png) right top no-repeat;
+    }
+    .feature {
+        margin-top: 130px;
+    }
+    h2:before {
+        background: url(../images/sprites/icon_festivals.png) left top no-repeat;
+    }
+}
 .sub-nav {
     font-size: 11px;
     font-weight: bold;
@@ -180,75 +278,6 @@ form {
         color: @dgrey;
         float: right;
         padding-left: 5px;
-    }
-}
-
-.features {
-    .feature-list {
-        padding: 40px 0 0 0;
-        overflow: hidden;
-        margin: 0;
-        li {
-            position: relative;
-            box-sizing: border-box;
-            list-style: none;
-            float: left;
-            width: 31.9148%;
-            margin: 0 2.1276% 40px 0;
-            font-size: 13px;
-            padding-left: 80px;
-            &.last {
-                margin-right: 0;
-            }
-            span {
-                font-size: 16px;
-                font-weight: bold;
-                display: block;
-            }
-            &:before {
-                content: '';
-                display: block;
-                width: 60px;
-                height: 60px;
-                position: absolute;
-                left: 0;
-                top: 0;
-                background-position: left top;
-                background-image: url(../images/sprites/feature_schedule.png);
-            }
-        }
-    }
-}
-
-.festivals {
-    text-align: center;
-    .festival-packs {
-        margin: 0;
-        padding: 40px 0 0 0;
-        overflow: hidden;
-        li {
-            position: relative;
-            box-sizing: border-box;
-            list-style: none;
-            float: left;
-            width: 14.8936%;
-            margin-right: 2.1276%;
-            font-size: 13px;
-            &.last {
-                margin-right: 0;
-            }
-            span {
-                font-size: 16px;
-                font-weight: bold;
-                display: block;
-            }
-        }
-    }
-}
-
-.slideshow {
-    img {
-        width: 100%;
     }
 }
 
@@ -281,77 +310,6 @@ form {
     }
 }
 
-.footer {
-    font-size: 11px;
-    font-weight: bold;
-    color: #606361;
-    overflow: hidden;
-    .social {
-        width: 300px;
-        float: left;
-        p {
-            float: left;
-            margin: 35px 20px 0 0;
-        }
-        ul {
-            float: left;
-            padding: 0;
-            margin: 30px 0;
-            li {
-                list-style: none;
-                float: left;
-            }
-        }
-        .social-link {
-            display: block;
-            width: 28px;
-            height: 28px;
-            text-indent: -9999em;
-            margin-right: 10px;
-            &.facebook {
-                background: url(../images/sprites/bg_facebook.png) left top no-repeat;
-            }
-            &.twitter {
-                background: url(../images/sprites/bg_twitter.png) left top no-repeat;
-            }
-            &.googleplus {
-                background: url(../images/sprites/bg_googleplus.png) left top no-repeat;
-            }
-            &.pinterest {
-                background: url(../images/sprites/bg_pinterest.png) left top no-repeat;
-            }
-        }
-    }
-    .newsletter {
-        float: right;
-        width: 350px;
-        p {
-            float: left;
-            margin: 35px 20px 0 0;
-        }
-        form {
-            position: relative;
-            float: left;
-            width: auto;
-            margin: 25px 0 0 0;
-            input {
-                width: 190px;
-                background: @dgrey;
-                color: #fff;
-                padding: 10px;
-            }
-            span {
-                position: absolute;
-                right: 10px;
-                top: 10px;
-                width: 16px;
-                height: 16px;
-                background: url(../images/sprites/bg_submit.png) left top no-repeat;
-                text-indent: -9999em;
-                cursor: pointer;
-                z-index: 100;
-            }
-        }
-    }
+.contact-us {
+    text-align: center;
 }
-
