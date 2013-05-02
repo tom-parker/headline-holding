@@ -370,31 +370,32 @@ h2,
   margin: 0;
   padding: 40px 0 15px 0;
   line-height: 1;
+  font-size: 22px;
+  font-weight: bold;
+}
+h2.light,
+.beta.light {
+  font-size: 36px;
+  text-align: center;
+  color: #323c35;
+  padding-top: 80px;
+  font-weight: 100;
 }
 .logo {
   float: left;
-  font-size: 50px;
-  font-weight: bold;
-  color: #212522;
-  position: relative;
-  line-height: 1;
-  text-align: left;
-}
-.logo:after {
-  content: '';
-  width: 33px;
-  height: 33px;
+  display: block;
+  width: 234px;
+  height: 49px;
+  margin-left: -38px;
+  text-indent: -9999em;
   background: url(../images/sprites/logo.png) left top no-repeat;
-  left: -35px;
-  top: -5px;
-  position: absolute;
 }
 .sub-line {
   float: right;
   text-align: right;
   font-size: 16px;
   width: 400px;
-  margin: 25px 0 0 0;
+  margin: 30px 0 0 0;
 }
 .copy {
   max-width: 510px;
@@ -500,11 +501,14 @@ form textarea[type="submit"] {
   width: 57px;
   height: 57px;
   left: -70px;
-  top: 5px;
+  top: 20px;
   position: absolute;
 }
 .feature ul {
-  padding-left: 0;
+  padding-left: 18px;
+}
+.feature p {
+  margin-top: 0;
 }
 .feature-left {
   float: left;
@@ -514,17 +518,17 @@ form textarea[type="submit"] {
   float: right;
 }
 .triple-feature {
-  height: 585px;
+  height: 800px;
   background: url(../images/sprites/bg_triple.png) center bottom no-repeat;
   overflow: hidden;
 }
 .triple-feature .feature-item {
   float: left;
   width: 300px;
-  margin: 10px 20px 0 0;
+  margin: 10px 20px 30px 0;
   text-align: center;
 }
-.triple-feature .feature-item:last-child {
+.triple-feature .feature-item:nth-child(3n+0) {
   margin-right: 0;
 }
 .triple-feature .feature-item p {
@@ -534,11 +538,11 @@ form textarea[type="submit"] {
   padding-top: 60px;
 }
 .schedule .block-inner {
-  height: 560px;
+  height: 625px;
   background: url(../images/sprites/bg_schedule.png) left top no-repeat;
 }
 .schedule .feature {
-  margin-top: 130px;
+  margin-top: 155px;
 }
 .schedule h2:before {
   background: url(../images/sprites/icon_schedule.png) left top no-repeat;
@@ -547,31 +551,33 @@ form textarea[type="submit"] {
   padding-top: 60px;
 }
 .recommendations .block-inner {
-  height: 695px;
+  height: 653px;
   background: url(../images/sprites/bg_recommendations.png) right top no-repeat;
 }
 .recommendations .feature {
-  margin-top: 130px;
+  margin-top: 220px;
 }
 .recommendations h2:before {
   background: url(../images/sprites/icon_recommendations.png) left top no-repeat;
 }
-.tickets .block-inner {
-  height: 598px;
-  background: url(../images/sprites/bg_tickets.png) left top no-repeat;
-}
-.tickets .feature {
-  margin-top: 130px;
-}
-.tickets h2:before {
-  background: url(../images/sprites/icon_tickets.png) left top no-repeat;
-}
+/*.tickets {*/
+/*.block-inner {*/
+/*height: 598px;*/
+/*background: url(../images/sprites/bg_tickets.png) left top no-repeat;*/
+/*}*/
+/*.feature {*/
+/*margin-top: 130px;*/
+/*}*/
+/*h2:before {*/
+/*background: url(../images/sprites/icon_tickets.png) left top no-repeat;*/
+/*}*/
+/*}*/
 .festivals .block-inner {
-  height: 597px;
+  height: 598px;
   background: url(../images/sprites/bg_festivals.png) right top no-repeat;
 }
 .festivals .feature {
-  margin-top: 130px;
+  margin-top: 210px;
 }
 .festivals h2:before {
   background: url(../images/sprites/icon_festivals.png) left top no-repeat;
@@ -582,10 +588,12 @@ form textarea[type="submit"] {
   padding: 5px 0;
   overflow: hidden;
 }
-.sub-nav a {
+.sub-nav .link {
   color: #212522;
   float: right;
   padding-left: 5px;
+  width: 80px;
+  overflow: hidden;
 }
 .about-us {
   text-align: center;
@@ -614,6 +622,10 @@ form textarea[type="submit"] {
 }
 .about-us .us li a {
   display: block;
+}
+.about-us .twitter-btn {
+  display: block;
+  margin: 15px auto 0 auto;
 }
 .contact-us {
   text-align: center;

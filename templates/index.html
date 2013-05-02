@@ -25,13 +25,25 @@
         </script>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=255911231120910";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <header>
             <div class="block">
                 <div class="block-inner">
                     <nav class="sub-nav">
-                        <a href="https://twitter.com/headlineapp" class="twitter">Tweet</a>
-                        <a href="https://twitter.com/headlineapp" class="facebook">Facebook</a>
-                        <a href="https://twitter.com/headlineapp" class="google">Google+</a>
+                        <div class="link">
+                            <div class="fb-like" data-href="http://headline-app.com" data-send="false" data-layout="button_count" data-width="80" data-show-faces="true"></div>
+                        </div>
+                        <div class="link">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://headline-app.com" data-via="barky159">Tweet</a>
+                        </div>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                     </nav>
                 </div>
             </div>
@@ -42,9 +54,15 @@
                 </div>
             </div>
         </header>
+            
         <div class="block lgrey video">
             <div class="block-inner">
                 <iframe src="http://player.vimeo.com/video/36820781" width="940" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-inner">
+                <h2 class="light">In detail</h2>
             </div>
         </div>
         <div class="block schedule">
@@ -65,18 +83,29 @@
                 <div class="feature feature-left">
                     <h2>Recommendations</h2>
                     <p>Get the most out of festivals by checking out our recommendations based on what you already like</p>
-                    <ul>
-                        <li>Add something you like and we’ll offer you something new</li>
-                        <li>Already like someone? We’ll let you know when they’re on</li>
-                        <li>We’ll also show you what’s most popular with your freinds</li>
-                        <li>Why not try a similar festival based on what you liked</li>
-                    </ul>
                 </div>
             </div>
         </div>
         <div class="block">
             <div class="block-inner">
+                <h2 class="light">Not forgetting</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="block-inner">
                 <div class="triple-feature">
+                    <div class="feature-item">
+                        <h2>Offline mode</h2>
+                        <p>Read up on who's who, delve into a sea of new music or just find an artist you liked with in depth artist profiles</p>
+                    </div>
+                    <div class="feature-item">
+                        <h2>What's this?</h2>
+                        <p>Keep up to date with all the latest news, gossip and line ups for every festival</p>
+                    </div>
+                    <div class="feature-item">
+                        <h2>Tickets</h2>
+                        <p>Got your own stage? Get in with the right crowd with our related stage sponsorship modules</p>
+                    </div>
                     <div class="feature-item">
                         <h2>Artisits Profiles</h2>
                         <p>Read up on who's who, delve into a sea of new music or just find an artist you liked with in depth artist profiles</p>
@@ -92,14 +121,14 @@
                 </div>
             </div>
         </div>
-        <div class="block dgrey tickets">
-            <div class="block-inner">
-                <div class="feature feature-right">
-                    <h2>Tickets</h2>
-                    <p>Everything you need to get yourself ready for every festival across Europe - alongside your friends</p>
-                </div>
-            </div>
-        </div>
+        <!--<div class="block dgrey tickets">-->
+            <!--<div class="block-inner">-->
+                <!--<div class="feature feature-right">-->
+                    <!--<h2>Tickets</h2>-->
+                    <!--<p>Everything you need to get yourself ready for every festival across Europe - alongside your friends</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
         <div class="block dgrey festivals">
             <div class="block-inner">
                 <div class="feature feature-left">
@@ -117,19 +146,28 @@
                         <img src="/static/images/us-jk.png" alt="" />
                         <span>James Kirkup</span>
                         Co-Founder / Designer
-                        <a href="#">Follow</a>
+                        <div class="twitter-btn">
+                            <a href="https://twitter.com/james_kirkup" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @james_kirkup</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
                     </li>
                     <li>
                         <img src="/static/images/us-ms.png" alt="" />
                         <span>Martin Senyszak</span>
                         Co-Founder / Moving Image
-                        <a href="#">Follow</a>
+                        <div class="twitter-btn">
+                            <a href="https://twitter.com/MartinSenyszak" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @MartinSenyszak</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
                     </li>
                     <li class="last">
                         <img src="/static/images/us-tp.png" alt="" />
                         <span>Tom Parker</span>
                         Co-Founder / Developer
-                        <a href="#">Follow</a>
+                        <div class="twitter-btn">
+                            <a href="https://twitter.com/barky159" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @barky159</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
                     </li>
                 </ul>
             </div>
